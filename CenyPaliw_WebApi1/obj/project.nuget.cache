@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q/R23hXTNCm9iMXr5IPMiE2yq6Rst9oOJvEAenE77JN1APuwaSSvVgDTIhbezVOjtSrQB+hLu4Y4i1Iu8CKc7g==",
+  "dgSpecHash": "9nBRXWbDs/eMzj2BJYhaNZT0BMvByGXCLEK3I72NoD94OuD+ZVZ4e+lpbfcWSO9U/cElPTgQkMWCnp5UTpjaFw==",
   "success": true,
-  "projectFilePath": "C:\\praktyki\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
+  "projectFilePath": "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\olafr\\.nuget\\packages\\dynamicobj\\2.0.0\\dynamicobj.2.0.0.nupkg.sha512",
     "C:\\Users\\olafr\\.nuget\\packages\\fsharp.core\\6.0.5\\fsharp.core.6.0.5.nupkg.sha512",
