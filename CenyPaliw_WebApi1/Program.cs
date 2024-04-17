@@ -23,6 +23,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 var app = builder.Build();
 
+/// narzedzie do testowania API
+
 app.UseSwagger();
 
 app.UseSwaggerUI(c =>
