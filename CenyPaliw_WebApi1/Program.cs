@@ -8,6 +8,8 @@ using System.Drawing;
 using System.IO;
 using System.Threading.Tasks;
 
+///aplikacja na praktyki
+
 // Configure app
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPredictionEnginePool<CenyPaliw.ModelInput, CenyPaliw.ModelOutput>()

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\praktyki\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj": {}
+    "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj": {}
   },
   "projects": {
-    "C:\\praktyki\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj": {
+    "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\praktyki\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
+        "projectUniqueName": "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
         "projectName": "CenyPaliw_WebApi1",
-        "projectPath": "C:\\praktyki\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
+        "projectPath": "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\CenyPaliw_WebApi1.csproj",
         "packagesPath": "C:\\Users\\olafr\\.nuget\\packages\\",
-        "outputPath": "C:\\praktyki\\CenyPaliw_WebApi1\\obj\\",
+        "outputPath": "C:\\praktyki\\praktyki2\\CenyPaliw_WebApi1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
