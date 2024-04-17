@@ -1,0 +1,296 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\praktyki\\ON.csv",
+    "Delimiter": ";",
+    "DecimalMarker": ",",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Data",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Cena",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "typ paliwa",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.99459374237047415,
+        "RuntimeInSeconds": 5.85,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "typ paliwa"
+            ],
+            "InputColumnNames": [
+              "typ paliwa"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Data"
+            ],
+            "InputColumnNames": [
+              "Data"
+            ],
+            "TargetType": "Single"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "typ paliwa",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 28,
+            "LearningRate": 0.39872594527605343,
+            "NumberOfTrees": 2623,
+            "SubsampleFraction": 0.20305013440814113,
+            "MaximumBinCountPerFeature": 512,
+            "FeatureFraction": 0.89620453017067014,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.062034073231117072,
+            "LabelColumnName": "Cena",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.99299792309711332,
+        "RuntimeInSeconds": 4.526,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "typ paliwa"
+            ],
+            "InputColumnNames": [
+              "typ paliwa"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Data"
+            ],
+            "InputColumnNames": [
+              "Data"
+            ],
+            "TargetType": "Single"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "typ paliwa",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.99999977667298645,
+            "NumberOfTrees": 1777,
+            "SubsampleFraction": 0.42839813002912885,
+            "MaximumBinCountPerFeature": 371,
+            "FeatureFraction": 0.99999999,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.33619240635382369,
+            "LabelColumnName": "Cena",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.92914859515194159,
+        "RuntimeInSeconds": 0.56,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "typ paliwa"
+            ],
+            "InputColumnNames": [
+              "typ paliwa"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Data"
+            ],
+            "InputColumnNames": [
+              "Data"
+            ],
+            "TargetType": "Single"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "typ paliwa",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 54,
+            "NumberOfLeaves": 7,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Cena",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.92857089549691307,
+        "RuntimeInSeconds": 0.475,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "typ paliwa"
+            ],
+            "InputColumnNames": [
+              "typ paliwa"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Data"
+            ],
+            "InputColumnNames": [
+              "Data"
+            ],
+            "TargetType": "Single"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "typ paliwa",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 36,
+            "NumberOfLeaves": 11,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Cena",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.92824176119673929,
+        "RuntimeInSeconds": 0.852,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "typ paliwa"
+            ],
+            "InputColumnNames": [
+              "typ paliwa"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Data"
+            ],
+            "InputColumnNames": [
+              "Data"
+            ],
+            "TargetType": "Single"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "typ paliwa",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 106,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.977868736,
+            "LabelColumnName": "Cena",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ConvertType",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\praktyki\\aplikacja\\CenyPaliw.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 100,
+    "LabelColumn": "Cena",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
