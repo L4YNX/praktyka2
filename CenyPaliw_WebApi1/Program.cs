@@ -12,10 +12,18 @@ using System.Threading.Tasks;
 
 // Configure app
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddPredictionEnginePool<CenyPaliw.ModelInput, CenyPaliw.ModelOutput>()
     .FromFile("CenyPaliw.mlnet");
 
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
+{
+    build.WithOrigins("http://localhost:3001").AllowAnyMethod().AllowAnyHeader();
+}));
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -27,8 +35,12 @@ app.UseSwagger();
 
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+   c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
 });
+
+app.UseCors("corspolicy");
+
+app.UseAuthorization();
 
 // Define prediction route & handler
 app.MapPost("/predict",
